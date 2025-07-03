@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/fundamental-pract/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/fundamental-pract/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/fundamental-pract",
+  "projects": {
+    "first-svc": {
+      "type": "application",
+      "root": "apps/first-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/first-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/first-svc/tsconfig.app.json"
+      }
+    },
+    "fundamental-pract": {
+      "type": "application",
+      "root": "apps/fundamental-pract",
+      "entryFile": "main",
+      "sourceRoot": "apps/fundamental-pract/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/fundamental-pract/tsconfig.app.json"
+      }
+    },
+    "second-svc": {
+      "type": "application",
+      "root": "apps/second-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/second-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/second-svc/tsconfig.app.json"
+      }
+    },
+    "third-svc": {
+      "type": "application",
+      "root": "apps/third-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/third-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/third-svc/tsconfig.app.json"
+      }
+    }
+  }
+}
